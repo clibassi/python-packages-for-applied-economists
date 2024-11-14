@@ -41,11 +41,3 @@ The repository is organized as follows:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For questions, suggestions, or contributions, please reach out:
-
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **Twitter:** [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
