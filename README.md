@@ -35,7 +35,7 @@ The repository is organized as follows:
 
 - [`README.md`](./README.md): This file.
 - [`GUIDE.md`](./GUIDE.md): Comprehensive guide to Python packages.
-- [`LICENSE`](./LICENSE): License information.
+- [`LICENSE`](./LICENSE.md): License information.
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md): (Optional) Guidelines for contributions.
 
 ## License
