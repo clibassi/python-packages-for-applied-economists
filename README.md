@@ -41,12 +41,12 @@ Please ensure your contributions maintain consistency with the existing style an
   - [Interactive Visualization](#interactive-visualization)
   - [Publication-Ready Outputs](#publication-ready-outputs)
     - [Table Export and Formatting](#table-export-and-formatting)
-    - [Graph Export and Formatting](#graph-export-and-formatting)
 - [Specialized Tools](#specialized-tools)
   - [Geospatial Analysis](#geospatial-analysis)
   - [Text Analysis](#text-analysis)
   - [PDF Processing and Document Analysis](#pdf-processing-and-document-analysis)
   - [Web Scraping](#web-scraping)
+- [Bayesian Analysis Tools](#bayesian-analysis-tools)
 - [Development Tools](#development-tools)
   - [Debugging and Testing](#debugging-and-testing)
   - [Cross-Language Integration](#cross-language-integration)
@@ -96,38 +96,12 @@ Before diving into specialized packages, ensure you have the foundational librar
    - **Capabilities**:
      - ANOVAs, t-tests, correlations
      - Effect sizes, power analyses
-     - Bayesian statistics
    - **Installation**: `pip install pingouin`
    - **Link**: [https://pingouin-stats.org/](https://pingouin-stats.org/)
 
-3. **PyMC**
-   - **Description**: Probabilistic programming library for Bayesian modeling and inference.
-   - **Capabilities**:
-     - Bayesian statistical models
-     - Markov Chain Monte Carlo (MCMC)
-     - Variational inference
-   - **Installation**: `pip install pymc`
-   - **Link**: [https://docs.pymc.io/](https://docs.pymc.io/)
-
-4. **PyStan**
-   - **Description**: Python interface to the Stan language for statistical modeling and high-performance statistical computation.
-   - **Capabilities**:
-     - Bayesian inference
-     - Customizable statistical models
-   - **Installation**: `pip install pystan`
-   - **Link**: [https://pystan.readthedocs.io/en/latest/](https://pystan.readthedocs.io/en/latest/)
-
-5. **Bambi**
-   - **Description**: High-level Bayesian model-building interface in Python.
-   - **Capabilities**:
-     - Simplifies specification of Bayesian models using formulas
-     - Built on top of PyMC
-   - **Installation**: `pip install bambi`
-   - **Link**: [https://bambinos.org/](https://bambinos.org/)
-
 ### Instrumental Variables
 
-6. **Linearmodels**
+1. **Linearmodels**
    - **Description**: Specialized for panel data econometrics, including fixed effects, random effects, and instrumental variable models.
    - **Capabilities**:
      - Panel Data Analysis: Fixed effects, random effects, between estimators
@@ -139,7 +113,7 @@ Before diving into specialized packages, ensure you have the foundational librar
 
 ### Panel Data Methods
 
-7. **PyFixest**
+1. **PyFixest**
    - **Description**: Allows for fast estimation of linear models with multiple fixed effects, inspired by the R package **fixest**.
    - **Capabilities**:
      - High-dimensional fixed effects models
@@ -151,7 +125,7 @@ Before diving into specialized packages, ensure you have the foundational librar
 
 ### Regression Discontinuity Designs
 
-8. **rdrobust**
+1. **rdrobust**
    - **Description**: Implements local polynomial RD point estimators with robust bias-corrected confidence intervals and inference procedures.
    - **Capabilities**:
      - RD estimation and inference
@@ -160,7 +134,7 @@ Before diving into specialized packages, ensure you have the foundational librar
    - **Stata Equivalent**: `rdrobust`
    - **Link**: [https://pypi.org/project/rdrobust/](https://pypi.org/project/rdrobust/)
 
-9. **rdlocrand**
+2. **rdlocrand**
    - **Description**: Provides tools for local randomization methods in RD designs.
    - **Capabilities**:
      - Inference in RD designs using local randomization
@@ -168,7 +142,7 @@ Before diving into specialized packages, ensure you have the foundational librar
    - **Stata Equivalent**: `rdlocrand`
    - **Link**: [https://pypi.org/project/rdlocrand/](https://pypi.org/project/rdlocrand/)
 
-10. **rddensity**
+3. **rddensity**
     - **Description**: Provides manipulation testing based on density discontinuity.
     - **Capabilities**:
       - Density discontinuity tests at cutoff
@@ -176,7 +150,7 @@ Before diving into specialized packages, ensure you have the foundational librar
     - **Stata Equivalent**: `rddensity`
     - **Link**: [https://pypi.org/project/rddensity/](https://pypi.org/project/rddensity/)
 
-11. **rdmulti**
+4. **rdmulti**
     - **Description**: Analysis of RD designs with multiple cutoffs or scores.
     - **Capabilities**:
       - Multivariate RD analysis
@@ -184,7 +158,7 @@ Before diving into specialized packages, ensure you have the foundational librar
     - **Stata Equivalent**: `rdmulti`
     - **Link**: [https://pypi.org/project/rdmulti/](https://pypi.org/project/rdmulti/)
 
-12. **rdpower**
+5. **rdpower**
     - **Description**: Power calculations for RD designs.
     - **Capabilities**:
       - Computes power and sample size for RD designs
@@ -192,7 +166,7 @@ Before diving into specialized packages, ensure you have the foundational librar
     - **Stata Equivalent**: `rdpower`
     - **Link**: [https://pypi.org/project/rdpower/](https://pypi.org/project/rdpower/)
 
-13. **lpdensity**
+6. **lpdensity**
     - **Description**: Implements local polynomial point estimation with robust bias-corrected confidence intervals.
     - **Capabilities**:
       - Kernel density estimation
@@ -200,45 +174,45 @@ Before diving into specialized packages, ensure you have the foundational librar
     - **Installation**: `pip install lpdensity`
     - **Stata Equivalent**: Part of the RD analysis toolkit
     - **Link**: [https://pypi.org/project/lpdensity/](https://pypi.org/project/lpdensity/)
-
+  
 ### Difference-in-Differences and Synthetic Control Methods
 
-14. **CSDID**
-    - **Description**: Implements the Callaway and Sant'Anna (2020) Difference-in-Differences estimator for staggered adoption designs with treatment effect heterogeneity.
-    - **Capabilities**:
-      - Estimation of group-time average treatment effects
-      - Handles multiple time periods and variation in treatment timing
-      - Allows for treatment effect heterogeneity
-    - **Installation**:
-      ```bash
-      git clone https://github.com/d2cml-ai/csdid.git
-      cd csdid
-      pip install .
-      ```
-    - **Stata Equivalent**: `csdid` (user-contributed command)
-    - **Link**: [https://github.com/d2cml-ai/csdid](https://github.com/d2cml-ai/csdid)
+1. **CSDID**
+   - **Description**: Implements the Callaway and Sant'Anna (2020) Difference-in-Differences estimator for staggered adoption designs with treatment effect heterogeneity.
+   - **Capabilities**:
+     - Estimation of group-time average treatment effects
+     - Handles multiple time periods and variation in treatment timing
+     - Allows for treatment effect heterogeneity
+   - **Installation**:
+     ```bash
+     git clone https://github.com/d2cml-ai/csdid.git
+     cd csdid
+     pip install .
+     ```
+   - **Stata Equivalent**: `csdid` (user-contributed command)
+   - **Link**: [https://github.com/d2cml-ai/csdid](https://github.com/d2cml-ai/csdid)
 
-15. **synthdid**
-    - **Description**: Implements synthetic difference-in-differences estimation with inference and graphing procedures.
-    - **Capabilities**:
-      - Synthetic DiD estimation
-      - Multiple inference methods (placebo, bootstrap, jackknife)
-      - Plotting tools for outcomes and weights
-      - Support for covariates
-      - Handles staggered adoption over multiple treatment periods
-    - **Installation**: `pip install synthdid`
-    - **Stata Equivalent**: `sdid`
-    - **Link**: [https://pypi.org/project/synthdid/](https://pypi.org/project/synthdid/)
+2. **synthdid**
+   - **Description**: Implements synthetic difference-in-differences estimation with inference and graphing procedures.
+   - **Capabilities**:
+     - Synthetic DiD estimation
+     - Multiple inference methods (placebo, bootstrap, jackknife)
+     - Plotting tools for outcomes and weights
+     - Support for covariates
+     - Handles staggered adoption over multiple treatment periods
+   - **Installation**: `pip install synthdid`
+   - **Stata Equivalent**: `sdid`
+   - **Link**: [https://pypi.org/project/synthdid/](https://pypi.org/project/synthdid/)
 
-16. **SyntheticControlMethods**
-    - **Description**: A Python package for causal inference using various Synthetic Control Methods.
-    - **Capabilities**:
-      - Synthetic Control estimation
-      - Placebo tests
-      - Support for panel data
-    - **Installation**: `pip install SyntheticControlMethods`
-    - **Stata Equivalent**: `synth`
-    - **Link**: [https://pypi.org/project/SyntheticControlMethods/](https://pypi.org/project/SyntheticControlMethods/)
+3. **SyntheticControlMethods**
+   - **Description**: A Python package for causal inference using various Synthetic Control Methods.
+   - **Capabilities**:
+     - Synthetic Control estimation
+     - Placebo tests
+     - Support for panel data
+   - **Installation**: `pip install SyntheticControlMethods`
+   - **Stata Equivalent**: `synth`
+   - **Link**: [https://pypi.org/project/SyntheticControlMethods/](https://pypi.org/project/SyntheticControlMethods/)
 
 ---
 
@@ -273,14 +247,13 @@ Before diving into specialized packages, ensure you have the foundational librar
 
 ### Sensitivity Analysis
 
-4. **PySensemakr**
+1. **PySensemakr**
     - **Description**: Sensitivity analysis toolkit for regression models.
     - **Capabilities**:
       - Quantify robustness of regression coefficients to unobserved confounding
       - Implements methods similar to the `sensemakr` R package
     - **Installation**: `pip install PySensemakr`
     - **Link**: [https://github.com/Carloscinelli/PySensemakr](https://github.com/Carloscinelli/PySensemakr)
----
 
 ## Machine Learning
 
@@ -365,9 +338,7 @@ Before diving into specialized packages, ensure you have the foundational librar
      - Handling of complex seasonality and trends
    - **Installation**: `pip install neuralforecast`
    - **Link**: [https://github.com/Nixtla/neuralforecast](https://github.com/Nixtla/neuralforecast)
-
----
-
+  
 ## Data Management and Processing
 
 ### Record Linkage and Data Matching
@@ -466,9 +437,7 @@ Before diving into specialized packages, ensure you have the foundational librar
      - Partial and token-based ratios
    - **Installation**: `pip install fuzzywuzzy`
    - **Link**: [https://pypi.org/project/fuzzywuzzy/](https://pypi.org/project/fuzzywuzzy/)
-
----
-
+  
 ## Visualization and Reporting
 
 ### Static Visualization
@@ -541,8 +510,6 @@ Before diving into specialized packages, ensure you have the foundational librar
 
 ### Publication-Ready Outputs
 
-Creating publication-ready tables and graphs is essential for reporting and dissemination in applied economics. The following tools assist in exporting high-quality outputs suitable for inclusion in reports, papers, and presentations.
-
 #### Table Export and Formatting
 
 1. **Stargazer**
@@ -569,7 +536,7 @@ Creating publication-ready tables and graphs is essential for reporting and diss
      - Customizable table appearance and statistics
    - **Installation**: `pip install pystout`
    - **Link**: [https://pypi.org/project/pystout/](https://pypi.org/project/pystout/)
-
+  
 4. **tableone**
    - **Description**: Produces summary statistics for research papers.
    - **Capabilities**:
@@ -595,51 +562,6 @@ Creating publication-ready tables and graphs is essential for reporting and diss
      - Multiple output formats: plain text, GitHub-flavored Markdown, LaTeX, HTML, and more
    - **Installation**: `pip install tabulate`
    - **Link**: [https://pypi.org/project/tabulate/](https://pypi.org/project/tabulate/)
-
-7. **Pandas `to_latex()` Method**
-   - **Description**: Pandas DataFrames have a built-in method to export tables to LaTeX format.
-   - **Capabilities**:
-     - Export DataFrames to LaTeX with customization options
-     - Control over formatting, column alignment, and more
-   - **Usage**:
-     ```python
-     latex_table = df.to_latex()
-     ```
-
-8. **DataFrame-Output**
-   - **Description**: A package to create publication-ready tables from DataFrames.
-   - **Capabilities**:
-     - Provides extensive customization for LaTeX tables
-     - Handles multi-level indexing and complex DataFrames
-   - **Installation**: `pip install dataframe_output`
-   - **Link**: [https://pypi.org/project/dataframe-output/](https://pypi.org/project/dataframe-output/)
-
----
-
-#### Graph Export and Formatting
-
-1. **Matplotlib Export Options**
-   - **Description**: Matplotlib provides extensive options for saving figures.
-   - **Capabilities**:
-     - Export graphs to formats like PNG, PDF, SVG, EPS
-     - Control over figure size, resolution, and quality
-   - **Installation**: Part of `matplotlib`
-
-2. **Seaborn and Plotly**
-   - **Description**: Both libraries integrate with Matplotlib's saving functions or have their own export methods.
-   - **Capabilities**:
-     - High-quality statistical graphs
-     - Interactive visualizations with Plotly can be exported to static images or HTML files
-   - **Installation**: `pip install seaborn` and `pip install plotly`
-
-3. **Exporting Interactive Visualizations**
-   - **Description**: Libraries like Plotly and Bokeh offer options to export interactive graphs.
-   - **Capabilities**:
-     - Save interactive graphs as HTML files for web use
-     - Export static images for print publications
-   - **Installation**: `pip install bokeh`
-
----
 
 ## Specialized Tools
 
@@ -759,7 +681,7 @@ Creating publication-ready tables and graphs is essential for reporting and diss
      - Layout analysis
    - **Installation**: `pip install pdfminer.six`
    - **Link**: [https://pypi.org/project/pdfminer/](https://pypi.org/project/pdfminer/)
-
+  
 ### Web Scraping
 
 1. **BeautifulSoup**
@@ -785,7 +707,32 @@ Creating publication-ready tables and graphs is essential for reporting and diss
    - **Installation**: `pip install requests-html`
    - **Link**: [https://github.com/psf/requests-html](https://github.com/psf/requests-html)
 
----
+## Bayesian Analysis Tools
+
+1. **PyMC**
+   - **Description**: Probabilistic programming library for Bayesian modeling and inference.
+   - **Capabilities**:
+     - Bayesian statistical models
+     - Markov Chain Monte Carlo (MCMC)
+     - Variational inference
+   - **Installation**: `pip install pymc`
+   - **Link**: [https://docs.pymc.io/](https://docs.pymc.io/)
+
+2. **PyStan**
+   - **Description**: Python interface to the Stan language for statistical modeling and high-performance statistical computation.
+   - **Capabilities**:
+     - Bayesian inference
+     - Customizable statistical models
+   - **Installation**: `pip install pystan`
+   - **Link**: [https://pystan.readthedocs.io/en/latest/](https://pystan.readthedocs.io/en/latest/)
+
+3. **Bambi**
+   - **Description**: High-level Bayesian model-building interface in Python.
+   - **Capabilities**:
+     - Simplifies specification of Bayesian models using formulas
+     - Built on top of PyMC
+   - **Installation**: `pip install bambi`
+   - **Link**: [https://bambinos.org/](https://bambinos.org/)
 
 ## Development Tools
 
@@ -805,7 +752,7 @@ Creating publication-ready tables and graphs is essential for reporting and diss
    - **Description**: Fast, extensible progress bar for Python.
    - **Installation**: `pip install tqdm`
    - **Link**: [https://tqdm.github.io/](https://tqdm.github.io/)
-
+  
 ### Cross-Language Integration
 
 1. **RPy2**
@@ -829,7 +776,7 @@ You can install most of these packages using pip:
 
 ```bash
 pip install numpy pandas scipy statsmodels pingouin pymc pystan bambi linearmodels pyfixest econml doubleml marginaleffects pysensemakr scikit-learn xgboost lightgbm matplotlib seaborn plotnine rpy2 rdrobust rdlocrand rddensity rdmulti rdpower lpdensity synthdid SyntheticControlMethods arch ruptures xarray statsforecast neuralforecast recordlinkage dedupe py_stringmatching pyjarowinkler rapidfuzz fuzzywuzzy nameparser company-matching python-Levenshtein jellyfish PyStemmer nltk langdetect beautifulsoup4 requests requests-html pytesseract tabula-py python-pdfbox pdfminer.six plotly altair bokeh prettytable tabulate stackprinter pdbpp tqdm geopandas geoplot geopy geocoder libpysal binsreg prophet layoutparser stargazer pytablewriter xtable pystout tableone great_tables
-
+```
 
 ## License
 
