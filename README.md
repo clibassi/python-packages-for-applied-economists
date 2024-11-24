@@ -5,22 +5,6 @@
 
 A comprehensive guide to Python packages for applied economists, organized by functionality to support econometric analysis, data management, visualization, and specialized tasks.
 
-## Contributing
-
-We welcome contributions! If you find any errors or have suggestions for new packages:
-
-1. **Open an Issue**: 
-   - Use the [issue tracker](https://github.com/yourusername/python-packages-for-applied-economists/issues)
-   - Provide a clear description of the suggestion or problem
-
-2. **Submit a Pull Request**:
-   - Fork the repository
-   - Create a new branch (`git checkout -b feature/your-feature-name`)
-   - Make your changes
-   - Submit a pull request with a clear description of the changes
-
-Please ensure your contributions maintain consistency with the existing style and verify the accuracy of any package information you add.
-
 ## Table of Contents
 - [Core Libraries](#core-libraries)
 - [Econometric Methods and Research Designs](#econometric-methods-and-research-designs)
