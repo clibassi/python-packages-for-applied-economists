@@ -17,7 +17,9 @@ A comprehensive guide to Python packages for applied economists, organized by fu
   - [Sensitivity Analysis](#sensitivity-analysis)
 - [Machine Learning](#machine-learning)
 - [Time Series Tools](#time-series-tools)
+- [Bayesian Analysis Tools](#bayesian-analysis-tools)
 - [Data Management and Processing](#data-management-and-processing)
+  - [DataFrame Libraries](#dataframe-libraries)
   - [Record Linkage and Data Matching](#record-linkage-and-data-matching)
   - [Distance Metrics and String Matching](#distance-metrics-and-string-matching)
 - [Visualization and Reporting](#visualization-and-reporting)
@@ -30,7 +32,6 @@ A comprehensive guide to Python packages for applied economists, organized by fu
   - [Text Analysis](#text-analysis)
   - [PDF Processing and Document Analysis](#pdf-processing-and-document-analysis)
   - [Web Scraping](#web-scraping)
-- [Bayesian Analysis Tools](#bayesian-analysis-tools)
 - [Development Tools](#development-tools)
   - [Debugging and Testing](#debugging-and-testing)
   - [Cross-Language Integration](#cross-language-integration)
@@ -323,7 +324,68 @@ Before diving into specialized packages, ensure you have the foundational librar
    - **Installation**: `pip install neuralforecast`
    - **Link**: [https://github.com/Nixtla/neuralforecast](https://github.com/Nixtla/neuralforecast)
   
+---
+   
+## Bayesian Analysis Tools
+
+1. **PyMC**
+   - **Description**: Probabilistic programming library for Bayesian modeling and inference.
+   - **Capabilities**:
+     - Bayesian statistical models
+     - Markov Chain Monte Carlo (MCMC)
+     - Variational inference
+   - **Installation**: `pip install pymc`
+   - **Link**: [https://docs.pymc.io/](https://docs.pymc.io/)
+
+2. **PyStan**
+   - **Description**: Python interface to the Stan language for statistical modeling and high-performance statistical computation.
+   - **Capabilities**:
+     - Bayesian inference
+     - Customizable statistical models
+   - **Installation**: `pip install pystan`
+   - **Link**: [https://pystan.readthedocs.io/en/latest/](https://pystan.readthedocs.io/en/latest/)
+
+3. **Bambi**
+   - **Description**: High-level Bayesian model-building interface in Python.
+   - **Capabilities**:
+     - Simplifies specification of Bayesian models using formulas
+     - Built on top of PyMC
+   - **Installation**: `pip install bambi`
+   - **Link**: [https://bambinos.org/](https://bambinos.org/)
+  
 ## Data Management and Processing
+
+### DataFrame Libraries
+
+1. **Polars**
+   - **Description**: Modern, high-performance DataFrame library optimized for performance and memory efficiency.
+   - **Capabilities**:
+     - Fast parallel execution of data operations
+     - Memory-efficient processing
+     - Syntax familiar to pandas and R's tidyverse users
+     - Strong integration with Apache Arrow
+   - **Installation**: `pip install polars`
+   - **Link**: [https://pola.rs/](https://pola.rs/)
+
+2. **Datatable**
+   - **Description**: High-performance library for processing large datasets (up to 100GB) on a single machine.
+   - **Capabilities**:
+     - Superior performance in sorting and grouping operations
+     - Efficient memory usage
+     - Seamless interoperability with pandas/NumPy
+     - Optimized for single-node processing
+   - **Installation**: `pip install datatable`
+   - **Link**: [https://github.com/h2oai/datatable](https://github.com/h2oai/datatable)
+
+3. **Vaex**
+   - **Description**: Out-of-core DataFrame library for large datasets with lazy evaluation.
+   - **Capabilities**:
+     - Memory-efficient handling of large datasets
+     - Lazy evaluation for optimized performance
+     - Built-in visualization capabilities
+     - Good for datasets that don't fit in memory
+   - **Installation**: `pip install vaex`
+   - **Link**: [https://vaex.io/](https://vaex.io/)
 
 ### Record Linkage and Data Matching
 
@@ -691,32 +753,6 @@ Before diving into specialized packages, ensure you have the foundational librar
    - **Installation**: `pip install requests-html`
    - **Link**: [https://github.com/psf/requests-html](https://github.com/psf/requests-html)
 
-## Bayesian Analysis Tools
-
-1. **PyMC**
-   - **Description**: Probabilistic programming library for Bayesian modeling and inference.
-   - **Capabilities**:
-     - Bayesian statistical models
-     - Markov Chain Monte Carlo (MCMC)
-     - Variational inference
-   - **Installation**: `pip install pymc`
-   - **Link**: [https://docs.pymc.io/](https://docs.pymc.io/)
-
-2. **PyStan**
-   - **Description**: Python interface to the Stan language for statistical modeling and high-performance statistical computation.
-   - **Capabilities**:
-     - Bayesian inference
-     - Customizable statistical models
-   - **Installation**: `pip install pystan`
-   - **Link**: [https://pystan.readthedocs.io/en/latest/](https://pystan.readthedocs.io/en/latest/)
-
-3. **Bambi**
-   - **Description**: High-level Bayesian model-building interface in Python.
-   - **Capabilities**:
-     - Simplifies specification of Bayesian models using formulas
-     - Built on top of PyMC
-   - **Installation**: `pip install bambi`
-   - **Link**: [https://bambinos.org/](https://bambinos.org/)
 
 ## Development Tools
 
