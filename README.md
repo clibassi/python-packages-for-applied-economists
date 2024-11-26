@@ -386,6 +386,16 @@ Before diving into specialized packages, ensure you have the foundational librar
      - Good for datasets that don't fit in memory
    - **Installation**: `pip install vaex`
    - **Link**: [https://vaex.io/](https://vaex.io/)
+   
+4. **DuckDB**
+   - **Description**: SQL database engine with DataFrame-like functionality and exceptional performance for analytical queries.
+   - **Capabilities**:
+     - Top-tier performance for large-scale data operations
+     - SQL interface for data manipulation
+     - Efficient handling of large datasets (50GB+)
+     - Strong integration with pandas and Arrow
+   - **Installation**: `pip install duckdb`
+   - **Link**: [https://duckdb.org/](https://duckdb.org/)
 
 ### Record Linkage and Data Matching
 
